@@ -233,3 +233,7 @@ func getEnv(key, fallback string) string {
 	return fallback
 }
 
+func StatusInternalServerError(w http.ResponseWriter){
+	w.WriteHeader(http.StatusInternalServerError)
+	w.Write([]byte("Internal Server Error"))
+}
