@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- index.html: Single-page landing site for VÉRA skincare -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VÉRA | Modern Skincare</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="#top" class="logo">VÉRA</a>
+          <p class="tagline">Made for everyone who cares</p>
+        </div>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#essentials">Essentials</a></li>
+            <li><a href="#contact">Contact us</a></li>
+            <li><a href="#about">About VÉRA</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-text">
+          <h1>
+            We create clean, cruelty-free, unisex products that protect and
+            nourish your skin every day.
+          </h1>
+          <p>
+            Thoughtfully designed in Italy, VÉRA delivers modern, eco-friendly
+            skincare with gentle formulas that honor even the most sensitive
+            skin. Our routines stay simple, inclusive, and grounded in mindful
+            care.
+          </p>
+          <p>
+            True to skin. True to you.
+          </p>
+          <a class="btn primary" href="#essentials">Discover essentials</a>
+        </div>
+        <div class="hero-image" role="img" aria-label="Minimal skincare bottle"></div>
+      </section>
+
+      <section id="essentials" class="section">
+        <div class="container">
+          <header class="section-header">
+            <p class="eyebrow">Collection</p>
+            <h2>Essentials</h2>
+            <p>Daily essentials for gentle, effective skincare.</p>
+          </header>
+          <div class="product-grid">
+            <article class="product-card">
+              <h3>Soft Reset Cleanser</h3>
+              <p>
+                A featherlight gel that lifts impurities while keeping your
+                barrier calm and balanced.
+              </p>
+              <span class="label">For sensitive skin</span>
+              <button class="btn ghost">Learn more</button>
+            </article>
+            <article class="product-card">
+              <h3>Cloud Water Essence</h3>
+              <p>
+                Mineral-rich hydration with cactus flower and oat peptides for
+                an instant soothing glow.
+              </p>
+              <span class="label">For sensitive skin</span>
+              <button class="btn ghost">Shop now</button>
+            </article>
+            <article class="product-card">
+              <h3>Dawn Guard SPF 35</h3>
+              <p>
+                Weightless mineral sunscreen that shields against sun and blue
+                light without residue.
+              </p>
+              <span class="label">For sensitive skin</span>
+              <button class="btn ghost">Learn more</button>
+            </article>
+            <article class="product-card">
+              <h3>Nocturne Recovery Oil</h3>
+              <p>
+                Ceramide-rich oil that locks in moisture overnight for soft,
+                resilient skin by morning.
+              </p>
+              <span class="label">For sensitive skin</span>
+              <button class="btn ghost">Shop now</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section soft">
+        <div class="container about-grid">
+          <div>
+            <header class="section-header">
+              <p class="eyebrow">Our story</p>
+              <h2>About VÉRA</h2>
+            </header>
+            <p>
+              VÉRA was born in Milan with a simple belief: skincare should feel
+              as honest as it is effective. We craft clean, cruelty-free,
+              unisex formulas inspired by Italian botanical rituals and modern
+              science.
+            </p>
+            <p>
+              Each product is designed to work across skin types, especially the
+              sensitive and reactive. We focus on pared-back routines that let
+              true skin stay visible and vibrant.
+            </p>
+            <p>
+              True beauty, true care, true simplicity guide every decision we
+              make.
+            </p>
+          </div>
+          <div>
+            <ul class="principles">
+              <li>Clean ingredients sourced responsibly</li>
+              <li>Cruelty-free & vegan friendly</li>
+              <li>Gender-inclusive formulations</li>
+              <li>Designed for sensitive skin</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact-grid">
+          <header class="section-header">
+            <p class="eyebrow">Connect</p>
+            <h2>Contact us</h2>
+            <p>
+              Questions, wholesale inquiries, or partnership ideas? We’re here
+              to help.
+            </p>
+          </header>
+          <form class="contact-form" novalidate>
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button type="submit" class="btn primary">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="logo">VÉRA</p>
+          <p>© 2025 VÉRA Cosmetics. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#" aria-label="Twitter">Twitter</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cookie-banner" role="dialog" aria-live="polite">
+      <p>
+        This site uses cookies. By continuing to browse the site, you agree to
+        our use of cookies.
+      </p>
+      <button class="btn primary" id="cookieAccept">OK</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
